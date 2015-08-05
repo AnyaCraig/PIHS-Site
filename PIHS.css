@@ -1,0 +1,442 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+}
+/* FONTS */
+
+@font-face {
+    font-family: Paris;
+    src: url(Fonts/parisoldstyle.ttf);
+}
+@font-face {
+	font-family:Sumana;
+	src: url(Fonts/Sumanaregular.ttf);
+}
+@font-face {
+	font-family:Money;
+	src: url(Fonts/moneymoneyplus.ttf);
+}
+@font-face {
+	font-family: Cabin;
+	src: url(Fonts/Cabin-Regular-TTF.ttf);
+}
+
+/* HEADERS, PARAGRAPHS, AND STYLES */
+
+span.first-letter {
+	font-size:1.5em;
+	color:#41CEFF;
+}
+p {
+	font-family:Cabin, Verdana, Helvetica, sans-serif;
+	font-size:1.2em;
+	color:#D4FBFF;
+	text-align:justify;
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:5%;
+	line-height:30px;
+}
+h1 {
+	display:block;
+	font-family:Paris, Cabin, Verdana, sans-serif;
+	font-size:2.3em;
+	color:#41CEFF;
+	text-align:center;
+}
+
+/*FONT COLOURS:
+
+light blue:#D4FBFF
+bright blue:#41CEFF
+dark blue: rgba(5, 21, 38, 0.95); #021F33;
+
+/* END OF FONTS AND STYLES*/
+
+html { 
+  background: url(Images/lakeeriemap2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:relative;
+  min-height:100%;
+}
+body { 
+	margin-top:190px;
+	position:relative;
+	width:100%;
+}
+a {
+	text-decoration: none;
+}
+#container {
+	max-width:1100px;
+	margin: 0 auto;
+}
+
+/* HEADER SECTION */
+
+#header {
+	width:100%;
+	height:150px;
+	background-color:rgba(5, 21, 38, 0.95);
+	position:fixed;
+	top:0;
+	margin:0px;
+	padding:0px;
+	z-index:1;
+	overflow-x: hidden; 
+	overflow-y:hidden;
+	left:0;
+	opacity:0.95;
+}
+#logo {
+	height:90%;
+	display:inline;
+	position:absolute;
+	float:left;
+	margin-left:1%;
+	margin-top:.3%;
+}
+#navbartop {
+	position:relative;
+	display:inline-block;
+	list-style-type: none;
+	float:right;
+	text-align:center;
+	margin-top:95px;
+	width:85%;
+	margin-left:10%;
+	margin-right:-50px;
+}
+#navbartop li {
+	display:inline;
+	color:#1290D9;
+	font-family: Paris, Helvetica, Lucida, sans-serif, Verdana;
+	font-size:2.3em;
+	margin-left: 4%;
+	margin-right:4%;
+}
+#navbartop li a {
+	text-decoration: none;
+	color:#1290D9;
+}
+#navbartop li a:hover{
+	text-decoration:none;
+	color:#41CEFF;
+}
+#navbartop li a:active {
+	color:#EAE67A;
+}
+#navbartop li .donate {
+	display:inline-block;
+	background-color:#E85237;
+	color:#021F33;
+	border-radius:5px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:2px;
+	padding-bottom:1px;
+}
+.donate:hover {
+	background-color:#E83924;
+	color:white;
+}
+
+/* END OF HEADER */
+
+/* INTRO BOX */
+
+#introparent {
+    float:left;
+    margin: 0 auto;
+    background-color: rgba(5, 21, 38, 0.9);
+    border-radius:5px;
+}
+#introimage {
+	display:inline-block;
+	position:relative;
+	float:left;
+	width:30%;
+	top:0;
+	left:0;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+#introdiv {
+	display:inline-block;
+	float:right;
+	width:70%;
+	height:100%;
+}
+
+/* END OF INTRO BOX */
+
+/* EVENTS */
+
+#upcoming {
+	display:block;
+	float:left;
+	margin-top:60px;
+	margin-bottom:30px;
+	width:100%;
+	height:50px;
+	line-height:50px;
+	background-color: rgba(5, 21, 38, 0.9);
+	border-radius: 5px;
+}
+#eventfirstrow {
+    width:100%;
+    float:left;
+}
+#eventsecondrow {
+	float: left;
+	width: 100%;
+	margin-top:50px;
+	margin-bottom:60px;
+}
+.event {
+	position:relative;
+	float:left;
+	height:250px;
+	width:30%;
+	border-radius:10px;
+	display:inline-block;
+	margin-right:5%;
+}
+.event:last-child {
+	margin-right:0;
+}
+
+/* EVENTS HOVER EFFECTS */
+
+#hover {
+	display:none;
+	font-size:16px;
+}
+.hovercontent {
+    display:none;
+}
+.event:hover .hovercontent {
+    display:block;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom: 0;
+    background-color: rgba(2, 31, 51, 0.7);
+    border-radius:10px;
+}
+.hovercontent p {
+	text-align:center;
+	color:#D4FBFF;
+    font-family:Cabin, Verdana, Paris;
+    font-size: 20px;
+    margin-top:25%;
+}
+
+/* END OF EVENTS HOVER EFFECTS */
+
+.EventDescription {
+	color:#41CEFF;
+}
+#event1 {
+	background-image: url(http://www.pelee.org/images/uploads/1197561319.jpg);
+	background-size: cover !important;
+}
+#event2 {
+	background-image: url(http://tallshipspelee.org/wp-content/uploads/2012/11/HuldahsRock_EMELEG.jpg);
+	background-size: cover !important;
+}
+#event3 {
+	background-image: url(Images/middleislandmansion.jpg);
+ 	background-size: cover !important;
+	}
+#event4 {
+	background-image: url(http://pelee.com/wp-content/uploads/2014/06/scuba-diving-from-pelee-island.jpg);
+	background-size: cover !important;
+	}
+#event5 {
+	background-image: url(http://www.goerie.com/storyimage/GE/20130127/LEL02/301279996/AR/0/AR-301279996.jpg);
+	background-size: cover !important;
+}
+#event6 {
+	background-image: url(http://www.pelee.org/images/lighthousepoint2.jpg);
+	background-size: cover !important;
+}
+
+/* END OF EVENTS */
+
+/* ABOUT PELEE */
+
+#aboutPeleeParent {
+	width: 100%;
+	float:left;
+	margin: 0 auto;
+	background-color: rgba(5, 21, 38, 0.9);
+	border-radius:5px;
+	margin-bottom:50px;
+}
+#AboutTextDiv {
+	display:inline-block;
+	float:left;
+	width:60%;
+	height:100%;
+}
+#AbouttheIsland {
+	text-align: left;
+	margin-left:5%;
+	margin-top: 5%;
+}
+#PeleeMap {
+	display:inline-block;
+	position:relative;
+	float:right;
+	width:40%;
+	top:0;
+	left:0;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+/* END OF ABOUT PELEE */
+
+/* JOIN FORM */
+
+#JoinFormDiv {
+	width:100%;
+	float:left;
+    margin: 0 auto;
+    background-color: rgba(5, 21, 38, 0.9);
+	border-radius:5px;
+	margin-bottom:50px;
+}
+#JoinFormDiv h1 {
+	margin-top:20px;
+}
+#LittleLighthouse {
+	display:block;
+	height:80px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+#join {
+    width:100%;
+    margin-top:1%;
+}
+form {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+input {
+    width:44%;
+    margin-right:2%;
+	color: #051526;
+    font: 18px Cabin, sans-serif, #051526;
+    padding-left:1%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #D4FBFF;
+    border: none;
+    border-radius:5px;
+}
+#join #email {
+	margin-right:0;
+}
+input[type="text"] {
+    height: 50px;
+}
+textarea {
+    width:91%;
+    margin-top:12px;
+    height: 166px;
+    color: #051526;
+    font: 18px Cabin, sans-serif, #051526;
+    background-color: #D4FBFF;
+    border: 1px solid #B0E3A3;
+    border-radius:5px;
+    padding-top: 20px;
+    padding-left: 1%;
+}
+
+/* PLACEHOLDER TEXT */
+
+::-webkit-input-placeholder { 
+	font-family: Cabin, Verdana, sans-serif;
+    color:#051526;
+    font-size:18px;
+}
+::-moz-placeholder { 
+	font-family: Cabin, Verdana, sans-serif;
+    color:#051526;
+    font-size:18px;
+} 
+:-ms-input-placeholder { 
+	font-family: Cabin, Verdana, sans-serif;
+    color:#051526;
+    font-size:18px;
+}
+input:-moz-placeholder { 
+	font-family: Cabin, Verdana, sans-serif;
+    color:#051526;
+    font-size:18px;
+}
+
+/* END OF PLACEHOLDER TEXT */
+
+/* JOIN NOW BUTTON */
+
+#joinnow {
+	display: block;
+	text-decoration: none;
+	clear:both;
+	background-color: #41CEFF;
+	border-radius:5px;
+	color:#051526;
+	font-size:25px;
+	font-family:Paris, Cabin, sans-serif;
+    text-decoration:none;
+    border: none;
+	height:50px;
+	width:150px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 17px;
+	margin-bottom:20px;	
+	outline:none;
+}
+#joinnow:hover {
+	background-color: white;
+}
+
+/* END OF JOIN NOW BUTTON */
+
+/*END OF JOIN FORM */
+
+/* FOOTER */
+
+#footer {
+	width:100%;
+	height:100px;
+	line-height:100px;
+	clear:both;
+	background-color:rgba(5, 21, 38, 0.95);
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	font-family: Cabin, Verdana, sans-serif;
+	font-size:18px;
+	color:#41CEFF;
+}
+#footer a {
+	font-family: Cabin, Verdana, sans-serif;
+	font-size:18px;
+	color:#41CEFF;
+}
+#footer a:hover {
+	color:#D4FBFF
+}
